@@ -1064,3 +1064,8 @@
 [2026-04-01 15:56:38]   Committed: DEPLOY: Volume_Surge_20260401_155638 PF=2.61
 [2026-04-01 15:56:40]   Pushed!
 [2026-04-01 15:56:40] Iteration 56 done. Sleeping 60s...
+[2026-04-01 15:57:40] 
+--- ITERATION 57 ---
+[2026-04-01 15:57:40] Fetching market data...
+[2026-04-01 15:57:43]   BTCUSDT: OK
+[2026-04-01 15:57:46]   ETHUSDT: OK
