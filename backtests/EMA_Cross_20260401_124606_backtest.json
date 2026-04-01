@@ -1,0 +1,12 @@
+{
+  "strategy": "EMA_Cross_20260401_124606",
+  "timestamp": "2026-04-01T12:46:06.833999",
+  "total_trades": 116,
+  "win_rate": 53.25,
+  "avg_win_pct": 2.04,
+  "avg_loss_pct": 2.0,
+  "max_drawdown_pct": 11.68,
+  "years_tested": 4,
+  "profit_factor": 1.16,
+  "simulated": true
+}
