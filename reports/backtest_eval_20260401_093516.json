@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-04-01T09:35:16.256157",
+  "scores": {
+    "sample_size": 0.5,
+    "expectancy": 1.0,
+    "risk_management": 1.0,
+    "robustness": 0.3,
+    "execution_realism": 1.0
+  },
+  "overall_score": 0.76,
+  "red_flags": [],
+  "warnings": [
+    "Small sample: 82 trades. Prefer 100+ for confidence.",
+    "LOW EXPECTANCY: 0.439% per trade. Requires high volume.",
+    "MODERATE TEST PERIOD: 4 years. Prefer 10+ years."
+  ],
+  "verdict": "\u2705 DEPLOY",
+  "input_params": {
+    "total_trades": 82,
+    "win_rate": 54.8,
+    "avg_win_pct": 2.22,
+    "avg_loss_pct": 1.72,
+    "max_drawdown_pct": 10.64,
+    "years_tested": 4,
+    "num_parameters": 3,
+    "slippage_tested": true
+  }
+}
