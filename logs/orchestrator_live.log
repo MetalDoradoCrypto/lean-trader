@@ -1273,3 +1273,9 @@
 [2026-04-01 16:12:11]   Committed: REFINE: BB_Bounce_20260401_161210 PF=1.86
 [2026-04-01 16:12:12]   Pushed!
 [2026-04-01 16:12:12] Iteration 67 done. Sleeping 60s...
+[2026-04-01 16:13:12] 
+--- ITERATION 68 ---
+[2026-04-01 16:13:12] Fetching market data...
+[2026-04-01 16:13:16]   BTCUSDT: OK
+[2026-04-01 16:13:19]   ETHUSDT: OK
+[2026-04-01 16:13:22]   SOLUSDT: OK
