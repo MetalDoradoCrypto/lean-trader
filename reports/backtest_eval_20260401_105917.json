@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-01T10:59:17.471632",
+  "timestamp": "2026-04-01T10:59:17.643486",
   "scores": {
     "sample_size": 0.7,
     "expectancy": 1.0,
@@ -14,11 +14,11 @@
   ],
   "verdict": "\ud83d\udd04 REFINE",
   "input_params": {
-    "total_trades": 115,
-    "win_rate": 62.98,
-    "avg_win_pct": 3.28,
-    "avg_loss_pct": 2.41,
-    "max_drawdown_pct": 16.78,
+    "total_trades": 129,
+    "win_rate": 65.9,
+    "avg_win_pct": 2.87,
+    "avg_loss_pct": 2.05,
+    "max_drawdown_pct": 17.81,
     "years_tested": 4,
     "num_parameters": 3,
     "slippage_tested": true
