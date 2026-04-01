@@ -1,0 +1,8 @@
+{
+  "name": "Volume_Surge_20260401_171747",
+  "type": "Volume_Surge",
+  "hypothesis": "Volume>2xSMA + price up indicates momentum",
+  "stop_loss": 2.0,
+  "take_profit": 4.0,
+  "generated_at": "20260401_171747"
+}
