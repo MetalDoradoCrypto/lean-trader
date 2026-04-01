@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-04-01T15:33:31.697893",
+  "scores": {
+    "sample_size": 1.0,
+    "expectancy": 1.0,
+    "risk_management": 0.5,
+    "robustness": 0.3,
+    "execution_realism": 1.0
+  },
+  "overall_score": 0.76,
+  "red_flags": [],
+  "warnings": [
+    "MODERATE DRAWDOWN: 23.12%. Consider if acceptable for your risk tolerance.",
+    "MODERATE TEST PERIOD: 4 years. Prefer 10+ years."
+  ],
+  "verdict": "\u2705 DEPLOY",
+  "input_params": {
+    "total_trades": 200,
+    "win_rate": 64.92,
+    "avg_win_pct": 1.81,
+    "avg_loss_pct": 1.49,
+    "max_drawdown_pct": 23.12,
+    "years_tested": 4,
+    "num_parameters": 3,
+    "slippage_tested": true
+  }
+}
