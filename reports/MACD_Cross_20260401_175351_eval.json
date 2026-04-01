@@ -1,0 +1,18 @@
+{
+  "strategy": "MACD_Cross_20260401_175351",
+  "timestamp": "2026-04-01T17:53:51.965812",
+  "verdict": "REFINE",
+  "score": 0.6,
+  "metrics": {
+    "strategy": "MACD_Cross_20260401_175351",
+    "timestamp": "2026-04-01T17:53:51.908825",
+    "total_trades": 104,
+    "win_rate": 63.74,
+    "avg_win_pct": 3.2,
+    "avg_loss_pct": 2.22,
+    "max_drawdown_pct": 21.15,
+    "years_tested": 4,
+    "profit_factor": 2.54,
+    "simulated": true
+  }
+}
