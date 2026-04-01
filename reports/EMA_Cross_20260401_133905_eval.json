@@ -1,0 +1,18 @@
+{
+  "strategy": "EMA_Cross_20260401_133905",
+  "timestamp": "2026-04-01T13:39:05.239474",
+  "verdict": "DEPLOY",
+  "score": 0.86,
+  "metrics": {
+    "strategy": "EMA_Cross_20260401_133905",
+    "timestamp": "2026-04-01T13:39:05.187318",
+    "total_trades": 134,
+    "win_rate": 57.68,
+    "avg_win_pct": 3.57,
+    "avg_loss_pct": 1.26,
+    "max_drawdown_pct": 9.68,
+    "years_tested": 4,
+    "profit_factor": 3.86,
+    "simulated": true
+  }
+}
