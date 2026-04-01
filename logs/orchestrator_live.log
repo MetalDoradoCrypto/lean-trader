@@ -761,3 +761,19 @@
 [2026-04-01 15:34:06]   Committed: DEPLOY: MACD_Cross_20260401_153406 PF=1.79
 [2026-04-01 15:34:08]   Pushed!
 [2026-04-01 15:34:08] Iteration 40 done. Sleeping 60s...
+[2026-04-01 15:35:08] 
+--- ITERATION 41 ---
+[2026-04-01 15:35:08] Fetching market data...
+[2026-04-01 15:35:11]   BTCUSDT: OK
+[2026-04-01 15:35:14]   ETHUSDT: OK
+[2026-04-01 15:35:18]   SOLUSDT: OK
+[2026-04-01 15:35:21]   BTC-USD: FAIL
+[2026-04-01 15:35:25]   ETH-USD: FAIL
+[2026-04-01 15:35:30]   SPY: FAIL
+[2026-04-01 15:35:30] Generating strategy...
+[2026-04-01 15:35:30]   Generated: RSI_Momentum_20260401_153530
+[2026-04-01 15:35:30] Running backtest for RSI_Momentum_20260401_153530...
+[2026-04-01 15:35:30]   Trades=119, WR=66.27%, PF=4.16
+[2026-04-01 15:35:30] Evaluating RSI_Momentum_20260401_153530...
+[2026-04-01 15:35:30]   Verdict: REFINE (score=0.6)
+[2026-04-01 15:35:30] Committing to GitHub...
