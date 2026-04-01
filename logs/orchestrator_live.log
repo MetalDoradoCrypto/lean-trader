@@ -1051,3 +1051,13 @@
 [2026-04-01 15:56:21]   BTCUSDT: OK
 [2026-04-01 15:56:24]   ETHUSDT: OK
 [2026-04-01 15:56:28]   SOLUSDT: OK
+[2026-04-01 15:56:31]   BTC-USD: FAIL
+[2026-04-01 15:56:34]   ETH-USD: FAIL
+[2026-04-01 15:56:38]   SPY: FAIL
+[2026-04-01 15:56:38] Generating strategy...
+[2026-04-01 15:56:38]   Generated: Volume_Surge_20260401_155638
+[2026-04-01 15:56:38] Running backtest for Volume_Surge_20260401_155638...
+[2026-04-01 15:56:38]   Trades=182, WR=59.06%, PF=2.61
+[2026-04-01 15:56:38] Evaluating Volume_Surge_20260401_155638...
+[2026-04-01 15:56:38]   Verdict: DEPLOY (score=0.86)
+[2026-04-01 15:56:38] Committing to GitHub...
