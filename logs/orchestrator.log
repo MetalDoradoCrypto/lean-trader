@@ -1893,3 +1893,36 @@
 [2026-04-01 09:18:20]   Committed: DEPLOY: BB_Bounce_20260401_091820 PF=3.55
 [2026-04-01 09:18:20]   Verdict: DEPLOY (score=0.86)
 [2026-04-01 09:18:20] Committing to GitHub...
+[2026-04-01 09:18:20]   Committed: DEPLOY: EMA_Cross_20260401_091820 PF=3.61
+[2026-04-01 09:18:21]   Pushed!
+[2026-04-01 09:18:21] Iteration 15 done. Sleeping 60s...
+[2026-04-01 09:18:21]   Push failed
+[2026-04-01 09:18:21] Iteration 15 done. Sleeping 60s...
+[2026-04-01 09:19:12] 
+--- ITERATION 63 ---
+[2026-04-01 09:19:12] Fetching market data...
+[2026-04-01 09:19:15]   BTCUSDT: OK
+[2026-04-01 09:19:18]   ETHUSDT: OK
+[2026-04-01 09:19:21] 
+--- ITERATION 16 ---
+[2026-04-01 09:19:21] Fetching market data...
+[2026-04-01 09:19:21] 
+--- ITERATION 16 ---
+[2026-04-01 09:19:21] Fetching market data...
+[2026-04-01 09:19:22]   SOLUSDT: OK
+[2026-04-01 09:19:24]   BTCUSDT: OK
+[2026-04-01 09:19:24]   BTCUSDT: OK
+[2026-04-01 09:19:25]   BTC-USD: FAIL
+[2026-04-01 09:19:28]   ETHUSDT: OK
+[2026-04-01 09:19:28]   ETHUSDT: OK
+[2026-04-01 09:19:28]   ETH-USD: FAIL
+[2026-04-01 09:19:31]   SOLUSDT: OK
+[2026-04-01 09:19:31]   SOLUSDT: OK
+[2026-04-01 09:19:31]   SPY: FAIL
+[2026-04-01 09:19:31] Generating strategy...
+[2026-04-01 09:19:31]   Generated: MACD_Cross_20260401_091931
+[2026-04-01 09:19:31] Running backtest for MACD_Cross_20260401_091931...
+[2026-04-01 09:19:31]   Trades=200, WR=65.31%, PF=2.59
+[2026-04-01 09:19:31] Evaluating MACD_Cross_20260401_091931...
+[2026-04-01 09:19:31]   Verdict: DEPLOY (score=0.86)
+[2026-04-01 09:19:31] Committing to GitHub...
