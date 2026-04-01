@@ -1,0 +1,9 @@
+# Data Sources
+yfinance>=0.2.0
+python-binance>=1.0.0
+alpha_vantage>=3.0.0
+polygon-api-client>=1.16.0
+alpaca-trade-api>=0.25.0
+
+# QuantConnect Lean
+lean>=1.0.0
