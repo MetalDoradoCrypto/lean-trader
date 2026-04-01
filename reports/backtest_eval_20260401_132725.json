@@ -1,24 +1,25 @@
 {
-  "timestamp": "2026-04-01T13:27:25.732481",
+  "timestamp": "2026-04-01T13:27:25.851004",
   "scores": {
     "sample_size": 0.7,
     "expectancy": 1.0,
-    "risk_management": 0.7,
+    "risk_management": 0.5,
     "robustness": 0.3,
     "execution_realism": 1.0
   },
-  "overall_score": 0.74,
+  "overall_score": 0.7,
   "red_flags": [],
   "warnings": [
+    "MODERATE DRAWDOWN: 20.52%. Consider if acceptable for your risk tolerance.",
     "MODERATE TEST PERIOD: 4 years. Prefer 10+ years."
   ],
   "verdict": "\ud83d\udd04 REFINE",
   "input_params": {
-    "total_trades": 189,
-    "win_rate": 60.15,
-    "avg_win_pct": 1.9,
-    "avg_loss_pct": 1.18,
-    "max_drawdown_pct": 19.84,
+    "total_trades": 198,
+    "win_rate": 54.94,
+    "avg_win_pct": 3.01,
+    "avg_loss_pct": 1.6,
+    "max_drawdown_pct": 20.52,
     "years_tested": 4,
     "num_parameters": 3,
     "slippage_tested": true
