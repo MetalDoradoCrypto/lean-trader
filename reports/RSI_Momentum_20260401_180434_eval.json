@@ -1,0 +1,18 @@
+{
+  "strategy": "RSI_Momentum_20260401_180434",
+  "timestamp": "2026-04-01T18:04:34.521911",
+  "verdict": "DEPLOY",
+  "score": 0.86,
+  "metrics": {
+    "strategy": "RSI_Momentum_20260401_180434",
+    "timestamp": "2026-04-01T18:04:34.475639",
+    "total_trades": 121,
+    "win_rate": 63.88,
+    "avg_win_pct": 3.02,
+    "avg_loss_pct": 1.03,
+    "max_drawdown_pct": 11.54,
+    "years_tested": 4,
+    "profit_factor": 5.2,
+    "simulated": true
+  }
+}
