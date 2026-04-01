@@ -1,0 +1,18 @@
+{
+  "strategy": "RSI_Momentum_20260401_102312",
+  "timestamp": "2026-04-01T10:23:12.395705",
+  "verdict": "ABANDON",
+  "score": 0.3,
+  "metrics": {
+    "strategy": "RSI_Momentum_20260401_102312",
+    "timestamp": "2026-04-01T10:23:12.348940",
+    "total_trades": 186,
+    "win_rate": 55.94,
+    "avg_win_pct": 1.5,
+    "avg_loss_pct": 2.43,
+    "max_drawdown_pct": 9.43,
+    "years_tested": 4,
+    "profit_factor": 0.79,
+    "simulated": true
+  }
+}
