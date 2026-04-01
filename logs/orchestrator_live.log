@@ -2603,3 +2603,9 @@
 [2026-04-01 17:49:47]   Committed: REFINE: Volume_Surge_20260401_174947 PF=2.68
 [2026-04-01 17:49:48]   Pushed!
 [2026-04-01 17:49:48] Iteration 137 done. Sleeping 60s...
+[2026-04-01 17:50:48] 
+--- ITERATION 138 ---
+[2026-04-01 17:50:48] Fetching market data...
+[2026-04-01 17:50:52]   BTCUSDT: OK
+[2026-04-01 17:50:55]   ETHUSDT: OK
+[2026-04-01 17:50:59]   SOLUSDT: OK
