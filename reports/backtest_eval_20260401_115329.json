@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-04-01T11:53:29.291267",
+  "scores": {
+    "sample_size": 0.7,
+    "expectancy": 0.0,
+    "risk_management": 0.5,
+    "robustness": 0.3,
+    "execution_realism": 1.0
+  },
+  "overall_score": 0.5,
+  "red_flags": [
+    "NEGATIVE PROFIT FACTOR: 0.98. Strategy loses money."
+  ],
+  "warnings": [
+    "MODERATE DRAWDOWN: 20.9%. Consider if acceptable for your risk tolerance.",
+    "MODERATE TEST PERIOD: 4 years. Prefer 10+ years."
+  ],
+  "verdict": "\u274c ABANDON",
+  "input_params": {
+    "total_trades": 177,
+    "win_rate": 55.27,
+    "avg_win_pct": 1.95,
+    "avg_loss_pct": 2.46,
+    "max_drawdown_pct": 20.9,
+    "years_tested": 4,
+    "num_parameters": 3,
+    "slippage_tested": true
+  }
+}
