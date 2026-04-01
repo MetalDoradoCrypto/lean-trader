@@ -2622,3 +2622,7 @@
 [2026-04-01 17:51:08]   Committed: REFINE: MACD_Cross_20260401_175108 PF=4.14
 [2026-04-01 17:51:09]   Pushed!
 [2026-04-01 17:51:09] Iteration 138 done. Sleeping 60s...
+[2026-04-01 17:52:09] 
+--- ITERATION 139 ---
+[2026-04-01 17:52:09] Fetching market data...
+[2026-04-01 17:52:13]   BTCUSDT: OK
