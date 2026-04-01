@@ -27559,3 +27559,47 @@
 [2026-04-01 15:52:33] Evaluating MACD_Cross_20260401_155233...
 [2026-04-01 15:52:33]   Verdict: REFINE (score=0.6)
 [2026-04-01 15:52:33] Committing to GitHub...
+[2026-04-01 15:52:33]   Committed: REFINE: MACD_Cross_20260401_155233 PF=1.09
+[2026-04-01 15:52:34]   Pushed!
+[2026-04-01 15:52:34] Iteration 19 done. Sleeping 60s...
+[2026-04-01 15:52:34]   Push failed
+[2026-04-01 15:52:34] Iteration 64 done. Sleeping 60s...
+[2026-04-01 15:53:01] 
+--- ITERATION 20 ---
+[2026-04-01 15:53:01] Fetching market data...
+[2026-04-01 15:53:04]   BTCUSDT: OK
+[2026-04-01 15:53:07]   ETHUSDT: OK
+[2026-04-01 15:53:10]   SOLUSDT: OK
+[2026-04-01 15:53:13]   BTC-USD: FAIL
+[2026-04-01 15:53:17]   ETH-USD: FAIL
+[2026-04-01 15:53:20] 
+--- ITERATION 73 ---
+[2026-04-01 15:53:20] Fetching market data...
+[2026-04-01 15:53:20] ERROR: [Errno 32] Broken pipe
+[2026-04-01 15:53:23]   BTCUSDT: OK
+[2026-04-01 15:53:27]   ETHUSDT: OK
+[2026-04-01 15:53:29] 
+--- ITERATION 54 ---
+[2026-04-01 15:53:29] Fetching market data...
+[2026-04-01 15:53:30]   SOLUSDT: OK
+[2026-04-01 15:53:32]   BTCUSDT: OK
+[2026-04-01 15:53:33]   BTC-USD: FAIL
+[2026-04-01 15:53:34] 
+--- ITERATION 20 ---
+[2026-04-01 15:53:34] Fetching market data...
+[2026-04-01 15:53:34] 
+--- ITERATION 65 ---
+[2026-04-01 15:53:34] Fetching market data...
+[2026-04-01 15:53:35]   ETHUSDT: OK
+[2026-04-01 15:53:37]   ETH-USD: FAIL
+[2026-04-01 15:53:38]   BTCUSDT: OK
+[2026-04-01 15:53:38]   BTCUSDT: OK
+[2026-04-01 15:53:39]   SOLUSDT: OK
+[2026-04-01 15:53:41]   SPY: FAIL
+[2026-04-01 15:53:41] Generating strategy...
+[2026-04-01 15:53:41]   Generated: EMA_Cross_20260401_155341
+[2026-04-01 15:53:41] Running backtest for EMA_Cross_20260401_155341...
+[2026-04-01 15:53:41]   Trades=113, WR=67.33%, PF=3.19
+[2026-04-01 15:53:41] Evaluating EMA_Cross_20260401_155341...
+[2026-04-01 15:53:41]   Verdict: REFINE (score=0.6)
+[2026-04-01 15:53:41] Committing to GitHub...
