@@ -950,3 +950,19 @@
 [2026-04-01 15:48:18]   Committed: REFINE: MACD_Cross_20260401_154817 PF=2.85
 [2026-04-01 15:48:19]   Pushed!
 [2026-04-01 15:48:19] Iteration 50 done. Sleeping 60s...
+[2026-04-01 15:49:19] 
+--- ITERATION 51 ---
+[2026-04-01 15:49:19] Fetching market data...
+[2026-04-01 15:49:22]   BTCUSDT: OK
+[2026-04-01 15:49:25]   ETHUSDT: OK
+[2026-04-01 15:49:29]   SOLUSDT: OK
+[2026-04-01 15:49:32]   BTC-USD: FAIL
+[2026-04-01 15:49:37]   ETH-USD: FAIL
+[2026-04-01 15:49:40]   SPY: FAIL
+[2026-04-01 15:49:40] Generating strategy...
+[2026-04-01 15:49:40]   Generated: BB_Bounce_20260401_154940
+[2026-04-01 15:49:40] Running backtest for BB_Bounce_20260401_154940...
+[2026-04-01 15:49:40]   Trades=124, WR=67.54%, PF=2.02
+[2026-04-01 15:49:40] Evaluating BB_Bounce_20260401_154940...
+[2026-04-01 15:49:40]   Verdict: REFINE (score=0.6)
+[2026-04-01 15:49:40] Committing to GitHub...
