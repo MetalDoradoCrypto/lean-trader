@@ -1,0 +1,12 @@
+{
+  "strategy": "MACD_Cross_20260401_090449",
+  "timestamp": "2026-04-01T09:04:49.310994",
+  "total_trades": 82,
+  "win_rate": 54.29,
+  "avg_win_pct": 1.58,
+  "avg_loss_pct": 2.47,
+  "max_drawdown_pct": 15.23,
+  "years_tested": 4,
+  "profit_factor": 0.76,
+  "simulated": true
+}
