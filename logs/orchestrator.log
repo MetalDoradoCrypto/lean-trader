@@ -25037,3 +25037,34 @@
 [2026-04-01 15:11:03] Evaluating EMA_Cross_20260401_151103...
 [2026-04-01 15:11:03]   Verdict: DEPLOY (score=0.86)
 [2026-04-01 15:11:03] Committing to GitHub...
+[2026-04-01 15:11:03]   Committed: DEPLOY: EMA_Cross_20260401_151103 PF=5.21
+[2026-04-01 15:11:04]   Pushed!
+[2026-04-01 15:11:04] Iteration 23 done. Sleeping 60s...
+[2026-04-01 15:11:05]   BTCUSDT: OK
+[2026-04-01 15:11:09]   ETHUSDT: OK
+[2026-04-01 15:11:12]   SOLUSDT: OK
+[2026-04-01 15:11:15]   BTC-USD: FAIL
+[2026-04-01 15:11:18] ERROR: [Errno 32] Broken pipe
+[2026-04-01 15:11:48] 
+--- ITERATION 41 ---
+[2026-04-01 15:11:48] Fetching market data...
+[2026-04-01 15:11:51]   BTCUSDT: OK
+[2026-04-01 15:11:54]   ETHUSDT: OK
+[2026-04-01 15:11:58]   SOLUSDT: OK
+[2026-04-01 15:12:01]   BTC-USD: FAIL
+[2026-04-01 15:12:02] 
+--- ITERATION 35 ---
+[2026-04-01 15:12:02] Fetching market data...
+[2026-04-01 15:12:03]   ETH-USD: FAIL
+[2026-04-01 15:12:04] 
+--- ITERATION 24 ---
+[2026-04-01 15:12:04] Fetching market data...
+[2026-04-01 15:12:05]   BTCUSDT: OK
+[2026-04-01 15:12:07]   SPY: FAIL
+[2026-04-01 15:12:07] Generating strategy...
+[2026-04-01 15:12:07]   Generated: RSI_Momentum_20260401_151207
+[2026-04-01 15:12:07] Running backtest for RSI_Momentum_20260401_151207...
+[2026-04-01 15:12:07]   Trades=160, WR=52.16%, PF=2.04
+[2026-04-01 15:12:07] Evaluating RSI_Momentum_20260401_151207...
+[2026-04-01 15:12:07]   Verdict: REFINE (score=0.6)
+[2026-04-01 15:12:07] Committing to GitHub...
