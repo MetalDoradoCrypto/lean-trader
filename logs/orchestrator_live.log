@@ -2394,3 +2394,19 @@
 [2026-04-01 17:34:55]   Committed: DEPLOY: Volume_Surge_20260401_173455 PF=5.38
 [2026-04-01 17:34:57]   Pushed!
 [2026-04-01 17:34:57] Iteration 126 done. Sleeping 60s...
+[2026-04-01 17:35:57] 
+--- ITERATION 127 ---
+[2026-04-01 17:35:57] Fetching market data...
+[2026-04-01 17:36:00]   BTCUSDT: OK
+[2026-04-01 17:36:03]   ETHUSDT: OK
+[2026-04-01 17:36:06]   SOLUSDT: OK
+[2026-04-01 17:36:09]   BTC-USD: FAIL
+[2026-04-01 17:36:12]   ETH-USD: FAIL
+[2026-04-01 17:36:16]   SPY: FAIL
+[2026-04-01 17:36:16] Generating strategy...
+[2026-04-01 17:36:16]   Generated: Volume_Surge_20260401_173616
+[2026-04-01 17:36:16] Running backtest for Volume_Surge_20260401_173616...
+[2026-04-01 17:36:16]   Trades=81, WR=65.26%, PF=3.76
+[2026-04-01 17:36:16] Evaluating Volume_Surge_20260401_173616...
+[2026-04-01 17:36:16]   Verdict: REFINE (score=0.6)
+[2026-04-01 17:36:16] Committing to GitHub...
