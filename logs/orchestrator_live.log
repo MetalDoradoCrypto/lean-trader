@@ -1387,3 +1387,19 @@
 [2026-04-01 16:20:32]   Committed: REFINE: MACD_Cross_20260401_162032 PF=2.53
 [2026-04-01 16:20:33]   Pushed!
 [2026-04-01 16:20:33] Iteration 73 done. Sleeping 60s...
+[2026-04-01 16:21:33] 
+--- ITERATION 74 ---
+[2026-04-01 16:21:33] Fetching market data...
+[2026-04-01 16:21:37]   BTCUSDT: OK
+[2026-04-01 16:21:40]   ETHUSDT: OK
+[2026-04-01 16:21:43]   SOLUSDT: OK
+[2026-04-01 16:21:46]   BTC-USD: FAIL
+[2026-04-01 16:21:49]   ETH-USD: FAIL
+[2026-04-01 16:21:56]   SPY: FAIL
+[2026-04-01 16:21:56] Generating strategy...
+[2026-04-01 16:21:56]   Generated: EMA_Cross_20260401_162156
+[2026-04-01 16:21:56] Running backtest for EMA_Cross_20260401_162156...
+[2026-04-01 16:21:56]   Trades=135, WR=53.67%, PF=2.98
+[2026-04-01 16:21:56] Evaluating EMA_Cross_20260401_162156...
+[2026-04-01 16:21:56]   Verdict: REFINE (score=0.6)
+[2026-04-01 16:21:56] Committing to GitHub...
