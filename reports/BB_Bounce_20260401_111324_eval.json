@@ -1,0 +1,18 @@
+{
+  "strategy": "BB_Bounce_20260401_111324",
+  "timestamp": "2026-04-01T11:13:24.412695",
+  "verdict": "REFINE",
+  "score": 0.6,
+  "metrics": {
+    "strategy": "BB_Bounce_20260401_111324",
+    "timestamp": "2026-04-01T11:13:24.360230",
+    "total_trades": 156,
+    "win_rate": 59.76,
+    "avg_win_pct": 3.88,
+    "avg_loss_pct": 1.23,
+    "max_drawdown_pct": 21.74,
+    "years_tested": 4,
+    "profit_factor": 4.7,
+    "simulated": true
+  }
+}
