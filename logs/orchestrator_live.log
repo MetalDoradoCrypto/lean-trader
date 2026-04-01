@@ -2128,3 +2128,19 @@
 [2026-04-01 17:16:15]   Committed: REFINE: EMA_Cross_20260401_171615 PF=1.33
 [2026-04-01 17:16:16]   Pushed!
 [2026-04-01 17:16:16] Iteration 112 done. Sleeping 60s...
+[2026-04-01 17:17:16] 
+--- ITERATION 113 ---
+[2026-04-01 17:17:16] Fetching market data...
+[2026-04-01 17:17:19]   BTCUSDT: OK
+[2026-04-01 17:17:23]   ETHUSDT: OK
+[2026-04-01 17:17:26]   SOLUSDT: OK
+[2026-04-01 17:17:29]   BTC-USD: FAIL
+[2026-04-01 17:17:32]   ETH-USD: FAIL
+[2026-04-01 17:17:35]   SPY: FAIL
+[2026-04-01 17:17:35] Generating strategy...
+[2026-04-01 17:17:35]   Generated: Volume_Surge_20260401_171735
+[2026-04-01 17:17:35] Running backtest for Volume_Surge_20260401_171735...
+[2026-04-01 17:17:35]   Trades=131, WR=56.64%, PF=3.39
+[2026-04-01 17:17:35] Evaluating Volume_Surge_20260401_171735...
+[2026-04-01 17:17:35]   Verdict: DEPLOY (score=0.86)
+[2026-04-01 17:17:35] Committing to GitHub...
