@@ -1,0 +1,18 @@
+{
+  "strategy": "Volume_Surge_20260401_173717",
+  "timestamp": "2026-04-01T17:37:17.186533",
+  "verdict": "DEPLOY",
+  "score": 0.86,
+  "metrics": {
+    "strategy": "Volume_Surge_20260401_173717",
+    "timestamp": "2026-04-01T17:37:17.140332",
+    "total_trades": 169,
+    "win_rate": 63.51,
+    "avg_win_pct": 2.62,
+    "avg_loss_pct": 1.52,
+    "max_drawdown_pct": 14.27,
+    "years_tested": 4,
+    "profit_factor": 3.01,
+    "simulated": true
+  }
+}
