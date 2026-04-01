@@ -20370,3 +20370,32 @@
 [2026-04-01 13:52:40]   Committed: DEPLOY: RSI_Momentum_20260401_135240 PF=2.49
 [2026-04-01 13:52:40]   Verdict: DEPLOY (score=0.86)
 [2026-04-01 13:52:40] Committing to GitHub...
+[2026-04-01 13:52:40]   Committed: DEPLOY: Volume_Surge_20260401_135240 PF=2.21
+[2026-04-01 13:52:41]   Push failed
+[2026-04-01 13:52:41] Iteration 218 done. Sleeping 60s...
+[2026-04-01 13:52:42]   Pushed!
+[2026-04-01 13:52:42] Iteration 77 done. Sleeping 60s...
+[2026-04-01 13:52:56] 
+--- ITERATION 264 ---
+[2026-04-01 13:52:56] Fetching market data...
+[2026-04-01 13:52:58] 
+--- ITERATION 227 ---
+[2026-04-01 13:52:58] Fetching market data...
+[2026-04-01 13:52:59]   BTCUSDT: OK
+[2026-04-01 13:53:01]   BTCUSDT: OK
+[2026-04-01 13:53:02]   ETHUSDT: OK
+[2026-04-01 13:53:04]   ETHUSDT: OK
+[2026-04-01 13:53:06]   SOLUSDT: OK
+[2026-04-01 13:53:08]   SOLUSDT: OK
+[2026-04-01 13:53:09]   BTC-USD: FAIL
+[2026-04-01 13:53:11]   BTC-USD: FAIL
+[2026-04-01 13:53:12]   ETH-USD: FAIL
+[2026-04-01 13:53:14]   ETH-USD: FAIL
+[2026-04-01 13:53:15]   SPY: FAIL
+[2026-04-01 13:53:15] Generating strategy...
+[2026-04-01 13:53:15]   Generated: Volume_Surge_20260401_135315
+[2026-04-01 13:53:15] Running backtest for Volume_Surge_20260401_135315...
+[2026-04-01 13:53:15]   Trades=194, WR=63.69%, PF=2.67
+[2026-04-01 13:53:15] Evaluating Volume_Surge_20260401_135315...
+[2026-04-01 13:53:15]   Verdict: DEPLOY (score=0.86)
+[2026-04-01 13:53:15] Committing to GitHub...
