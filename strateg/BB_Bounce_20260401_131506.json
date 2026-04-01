@@ -1,0 +1,8 @@
+{
+  "name": "BB_Bounce_20260401_131506",
+  "type": "BB_Bounce",
+  "hypothesis": "Price at lower BB + RSI<35 indicates bounce",
+  "stop_loss": 2.5,
+  "take_profit": 5.0,
+  "generated_at": "20260401_131506"
+}
