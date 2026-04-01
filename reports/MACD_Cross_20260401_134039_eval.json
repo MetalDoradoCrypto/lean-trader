@@ -1,0 +1,18 @@
+{
+  "strategy": "MACD_Cross_20260401_134039",
+  "timestamp": "2026-04-01T13:40:39.860709",
+  "verdict": "DEPLOY",
+  "score": 0.86,
+  "metrics": {
+    "strategy": "MACD_Cross_20260401_134039",
+    "timestamp": "2026-04-01T13:40:39.806164",
+    "total_trades": 136,
+    "win_rate": 65.53,
+    "avg_win_pct": 2.31,
+    "avg_loss_pct": 2.36,
+    "max_drawdown_pct": 11.03,
+    "years_tested": 4,
+    "profit_factor": 1.86,
+    "simulated": true
+  }
+}
