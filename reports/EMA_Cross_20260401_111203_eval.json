@@ -1,0 +1,18 @@
+{
+  "strategy": "EMA_Cross_20260401_111203",
+  "timestamp": "2026-04-01T11:12:03.682261",
+  "verdict": "REFINE",
+  "score": 0.6,
+  "metrics": {
+    "strategy": "EMA_Cross_20260401_111203",
+    "timestamp": "2026-04-01T11:12:03.626048",
+    "total_trades": 184,
+    "win_rate": 62.19,
+    "avg_win_pct": 2.2,
+    "avg_loss_pct": 1.38,
+    "max_drawdown_pct": 17.56,
+    "years_tested": 4,
+    "profit_factor": 2.63,
+    "simulated": true
+  }
+}
