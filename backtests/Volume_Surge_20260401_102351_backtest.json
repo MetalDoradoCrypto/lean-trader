@@ -1,0 +1,12 @@
+{
+  "strategy": "Volume_Surge_20260401_102351",
+  "timestamp": "2026-04-01T10:23:51.167228",
+  "total_trades": 106,
+  "win_rate": 67.35,
+  "avg_win_pct": 2.26,
+  "avg_loss_pct": 1.34,
+  "max_drawdown_pct": 14.79,
+  "years_tested": 4,
+  "profit_factor": 3.5,
+  "simulated": true
+}
