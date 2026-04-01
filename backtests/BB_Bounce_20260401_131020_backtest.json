@@ -1,0 +1,12 @@
+{
+  "strategy": "BB_Bounce_20260401_131020",
+  "timestamp": "2026-04-01T13:10:20.624218",
+  "total_trades": 127,
+  "win_rate": 59.07,
+  "avg_win_pct": 3.1,
+  "avg_loss_pct": 2.48,
+  "max_drawdown_pct": 22.83,
+  "years_tested": 4,
+  "profit_factor": 1.8,
+  "simulated": true
+}
