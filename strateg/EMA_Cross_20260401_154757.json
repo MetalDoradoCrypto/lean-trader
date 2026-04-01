@@ -1,0 +1,8 @@
+{
+  "name": "EMA_Cross_20260401_154757",
+  "type": "EMA_Cross",
+  "hypothesis": "EMA9>EMA21 indicates uptrend",
+  "stop_loss": 2.0,
+  "take_profit": 4.0,
+  "generated_at": "20260401_154757"
+}
