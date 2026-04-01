@@ -1,0 +1,18 @@
+{
+  "strategy": "EMA_Cross_20260401_133415",
+  "timestamp": "2026-04-01T13:34:15.336636",
+  "verdict": "ABANDON",
+  "score": 0.3,
+  "metrics": {
+    "strategy": "EMA_Cross_20260401_133415",
+    "timestamp": "2026-04-01T13:34:15.286880",
+    "total_trades": 158,
+    "win_rate": 55.3,
+    "avg_win_pct": 1.7,
+    "avg_loss_pct": 2.37,
+    "max_drawdown_pct": 9.56,
+    "years_tested": 4,
+    "profit_factor": 0.89,
+    "simulated": true
+  }
+}
