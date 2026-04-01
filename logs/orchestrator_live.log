@@ -1691,3 +1691,19 @@
 [2026-04-01 16:44:35]   Committed: REFINE: BB_Bounce_20260401_164435 PF=2.91
 [2026-04-01 16:44:37]   Pushed!
 [2026-04-01 16:44:37] Iteration 89 done. Sleeping 60s...
+[2026-04-01 16:45:37] 
+--- ITERATION 90 ---
+[2026-04-01 16:45:37] Fetching market data...
+[2026-04-01 16:45:44]   BTCUSDT: OK
+[2026-04-01 16:45:51]   ETHUSDT: OK
+[2026-04-01 16:45:58]   SOLUSDT: OK
+[2026-04-01 16:46:06]   BTC-USD: FAIL
+[2026-04-01 16:46:13]   ETH-USD: FAIL
+[2026-04-01 16:46:20]   SPY: FAIL
+[2026-04-01 16:46:20] Generating strategy...
+[2026-04-01 16:46:20]   Generated: EMA_Cross_20260401_164620
+[2026-04-01 16:46:20] Running backtest for EMA_Cross_20260401_164620...
+[2026-04-01 16:46:20]   Trades=95, WR=63.42%, PF=2.86
+[2026-04-01 16:46:20] Evaluating EMA_Cross_20260401_164620...
+[2026-04-01 16:46:20]   Verdict: REFINE (score=0.6)
+[2026-04-01 16:46:20] Committing to GitHub...
