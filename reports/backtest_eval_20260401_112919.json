@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-04-01T11:29:19.928441",
+  "scores": {
+    "sample_size": 0.7,
+    "expectancy": 0.6,
+    "risk_management": 0.7,
+    "robustness": 0.3,
+    "execution_realism": 1.0
+  },
+  "overall_score": 0.6599999999999999,
+  "red_flags": [],
+  "warnings": [
+    "LOW EXPECTANCY: 0.269% per trade. Requires high volume.",
+    "MODERATE TEST PERIOD: 4 years. Prefer 10+ years."
+  ],
+  "verdict": "\ud83d\udd04 REFINE",
+  "input_params": {
+    "total_trades": 114,
+    "win_rate": 53.21,
+    "avg_win_pct": 1.79,
+    "avg_loss_pct": 1.46,
+    "max_drawdown_pct": 18.7,
+    "years_tested": 4,
+    "num_parameters": 3,
+    "slippage_tested": true
+  }
+}
