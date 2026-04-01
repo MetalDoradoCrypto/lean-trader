@@ -21817,3 +21817,29 @@
 [2026-04-01 14:10:13] Evaluating RSI_Momentum_20260401_141013...
 [2026-04-01 14:10:13]   Verdict: DEPLOY (score=0.86)
 [2026-04-01 14:10:13] Committing to GitHub...
+[2026-04-01 14:10:13]   Committed: DEPLOY: RSI_Momentum_20260401_141013 PF=1.53
+[2026-04-01 14:10:14]   BTCUSDT: OK
+[2026-04-01 14:10:15]   Pushed!
+[2026-04-01 14:10:15] Iteration 231 done. Sleeping 60s...
+[2026-04-01 14:10:18]   ETHUSDT: OK
+[2026-04-01 14:10:18] 
+--- ITERATION 139 ---
+[2026-04-01 14:10:18] Fetching market data...
+[2026-04-01 14:10:21]   SOLUSDT: OK
+[2026-04-01 14:10:21]   BTCUSDT: OK
+[2026-04-01 14:10:24]   BTC-USD: FAIL
+[2026-04-01 14:10:24]   ETHUSDT: OK
+[2026-04-01 14:10:28]   SOLUSDT: OK
+[2026-04-01 14:10:28]   ETH-USD: FAIL
+[2026-04-01 14:10:29] 
+--- ITERATION 190 ---
+[2026-04-01 14:10:29] Fetching market data...
+[2026-04-01 14:10:31]   BTC-USD: FAIL
+[2026-04-01 14:10:31]   SPY: FAIL
+[2026-04-01 14:10:31] Generating strategy...
+[2026-04-01 14:10:31]   Generated: EMA_Cross_20260401_141031
+[2026-04-01 14:10:31] Running backtest for EMA_Cross_20260401_141031...
+[2026-04-01 14:10:31]   Trades=161, WR=54.18%, PF=2.48
+[2026-04-01 14:10:31] Evaluating EMA_Cross_20260401_141031...
+[2026-04-01 14:10:31]   Verdict: DEPLOY (score=0.86)
+[2026-04-01 14:10:31] Committing to GitHub...
