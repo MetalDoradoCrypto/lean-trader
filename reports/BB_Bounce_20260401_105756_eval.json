@@ -1,0 +1,18 @@
+{
+  "strategy": "BB_Bounce_20260401_105756",
+  "timestamp": "2026-04-01T10:57:56.315419",
+  "verdict": "DEPLOY",
+  "score": 0.86,
+  "metrics": {
+    "strategy": "BB_Bounce_20260401_105756",
+    "timestamp": "2026-04-01T10:57:56.268737",
+    "total_trades": 197,
+    "win_rate": 67.9,
+    "avg_win_pct": 2.82,
+    "avg_loss_pct": 2.36,
+    "max_drawdown_pct": 11.32,
+    "years_tested": 4,
+    "profit_factor": 2.53,
+    "simulated": true
+  }
+}
