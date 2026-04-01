@@ -245,3 +245,14 @@
 [2026-04-01 14:57:30] Evaluating BB_Bounce_20260401_145730...
 [2026-04-01 14:57:30]   Verdict: DEPLOY (score=0.86)
 [2026-04-01 14:57:30] Committing to GitHub...
+[2026-04-01 14:57:30]   Committed: DEPLOY: BB_Bounce_20260401_145730 PF=2.42
+[2026-04-01 14:57:31]   Pushed!
+[2026-04-01 14:57:31] Iteration 13 done. Sleeping 60s...
+[2026-04-01 14:58:31] 
+--- ITERATION 14 ---
+[2026-04-01 14:58:31] Fetching market data...
+[2026-04-01 14:58:34]   BTCUSDT: OK
+[2026-04-01 14:58:38]   ETHUSDT: OK
+[2026-04-01 14:58:41]   SOLUSDT: OK
+[2026-04-01 14:58:45]   BTC-USD: FAIL
+[2026-04-01 14:58:48]   ETH-USD: FAIL
