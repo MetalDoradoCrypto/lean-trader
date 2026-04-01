@@ -2071,3 +2071,8 @@
 [2026-04-01 17:12:11]   Committed: REFINE: RSI_Momentum_20260401_171211 PF=1.44
 [2026-04-01 17:12:12]   Pushed!
 [2026-04-01 17:12:12] Iteration 109 done. Sleeping 60s...
+[2026-04-01 17:13:12] 
+--- ITERATION 110 ---
+[2026-04-01 17:13:12] Fetching market data...
+[2026-04-01 17:13:15]   BTCUSDT: OK
+[2026-04-01 17:13:19]   ETHUSDT: OK
