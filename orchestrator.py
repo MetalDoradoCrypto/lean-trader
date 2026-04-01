@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Lean Trader Orchestrator v2
+Lean Trader Orchestrator v3
 Automated trading strategy development loop.
 24/7: Research -> Generate -> Backtest -> Evaluate -> Push
 """
@@ -19,7 +19,7 @@ for d in [STRATEGIES_DIR, BACKTESTS_DIR, REPORTS_DIR, PROJECT_DIR + '/logs']:
 
 def log(msg):
     ts = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    line = f"[{ts}] {msg}"
+    line = "[%s] %s" % (ts, msg)
     print(line)
     with open(LOG_FILE, 'a') as f:
         f.write(line + '\n')
@@ -31,11 +31,72 @@ def run_cmd(cmd, cwd=None):
 def fetch_data():
     log("Fetching market data...")
     for sym in ['BTCUSDT', 'ETHUSDT', 'SOLUSDT']:
-        code, _, _ = run_cmd(f'python3 research/binance_data.py {sym} 365')
-        log(f"  {sym}: {'OK' if code == 0 else 'FAIL'}")
+        code, _, _ = run_cmd('python3 research/binance_data.py ' + sym + ' 365')
+        log("  " + sym + ": " + ("OK" if code == 0 else "FAIL"))
     for tick in ['BTC-USD', 'ETH-USD', 'SPY']:
-        code, _, _ = run_cmd(f'python3 research/yfinance_data.py {tick} 2020-01-01')
-        log(f"  {tick}: {'OK' if code == 0 else 'FAIL'}")
+        code, _, _ = run_cmd('python3 research/yfinance_data.py ' + tick + ' 2020-01-01')
+        log("  " + tick + ": " + ("OK" if code == 0 else "FAIL"))
+
+def write_strategy_file(name, cls, strat_type, hyp, stop, take):
+    """Write a Lean strategy file."""
+    lines = [
+        'from AlgorithmImports import *',
+        '',
+        'class ' + cls + '(QCAlgorithm):',
+        '    """' + hyp + '"""',
+        '    ',
+        '    def Initialize(self):',
+        '        self.SetStartDate(2020, 1, 1)',
+        '        self.SetEndDate(2024, 12, 31)',
+        '        self.SetCash(100000)',
+        '        self.sym = self.AddEquity("SPY", Resolution.Daily).Symbol',
+        '        self.sma200 = self.SMA(self.sym, 200, Resolution.Daily)',
+        '        self.rsi = self.RSI(self.sym, 14, Resolution.Daily)',
+        '        self.bb = self.BB(self.sym, 20, 2, MovingAverageType.Simple, Resolution.Daily)',
+        '        self.macd = self.MACD(self.sym, 12, 26, 9, Resolution.Daily)',
+        '        self.vol_sma = self.SMA(self.sym, 20, Resolution.Daily)',
+        '        self.SetWarmUp(200)',
+        '    ',
+        '    def OnData(self, data):',
+        '        if self.IsWarmingUp: return',
+        '        if not self.Portfolio.Invested:',
+        '            if self.ShouldEntry(data): self.SetHoldings(self.sym, 1)',
+        '        else:',
+        '            if self.ShouldExit(data): self.Liquidate()',
+        '    ',
+        '    def ShouldEntry(self, data):',
+        '        if not data.ContainsKey(self.sym): return False',
+        '        bar = data[self.sym]',
+        '        p = bar.Close',
+        '        rsi_ok = self.rsi.IsReady and self.rsi.Current.Value < 30',
+        '        price_ok = self.sma200.IsReady and p > self.sma200.Current.Value',
+        '        macd_ok = self.macd.IsReady and self.macd.Current.Value > self.macd.Signal.Current.Value',
+        '        vol_ok = self.vol_sma.IsReady and bar.Volume > self.vol_sma.Current.Value * 2',
+        '        if "' + strat_type + '" == "RSI_Momentum": return rsi_ok and price_ok',
+        '        elif "' + strat_type + '" == "MACD_Cross": return macd_ok',
+        '        elif "' + strat_type + '" == "BB_Bounce":',
+        '            bb_ok = self.bb.IsReady and p < self.bb.LowerBand.Current.Value',
+        '            return bb_ok and rsi_ok',
+        '        elif "' + strat_type + '" == "Volume_Surge": return vol_ok and p > bar.Open',
+        '        elif "' + strat_type + '" == "EMA_Cross":',
+        '            e9 = self.EMA(self.sym, 9, Resolution.Daily)',
+        '            e21 = self.EMA(self.sym, 21, Resolution.Daily)',
+        '            return e9.Current.Value > e21.Current.Value if e9.IsReady and e21.IsReady else False',
+        '        return False',
+        '    ',
+        '    def ShouldExit(self, data):',
+        '        if not data.ContainsKey(self.sym): return True',
+        '        bar = data[self.sym]',
+        '        entry = self.Portfolio[self.sym].AveragePrice',
+        '        curr = bar.Close',
+        '        loss = (entry - curr) / entry * 100',
+        '        if loss > ' + str(stop) + ': return True',
+        '        gain = (curr - entry) / entry * 100',
+        '        if gain > ' + str(take) + ': return True',
+        '        if self.Time.hour >= 15 and self.Time.minute >= 45: return True',
+        '        return False',
+    ]
+    return '\n'.join(lines)
 
 def generate_strategy():
     log("Generating strategy...")
@@ -53,111 +114,7 @@ def generate_strategy():
     name = s['type'] + '_' + ts
     cls = s['type'].replace('_', '')
     
-    code = 'from AlgorithmImports import *
-
-'
-    code += f'class {cls}(QCAlgorithm):
-'
-    code += f'    """{s["hyp"]}"""
-
-'
-    code += '    def Initialize(self):
-'
-    code += '        self.SetStartDate(2020, 1, 1)
-'
-    code += '        self.SetEndDate(2024, 12, 31)
-'
-    code += '        self.SetCash(100000)
-'
-    code += '        self.sym = self.AddEquity("SPY", Resolution.Daily).Symbol
-'
-    code += '        self.sma200 = self.SMA(self.sym, 200, Resolution.Daily)
-'
-    code += '        self.rsi = self.RSI(self.sym, 14, Resolution.Daily)
-'
-    code += '        self.bb = self.BB(self.sym, 20, 2, MovingAverageType.Simple, Resolution.Daily)
-'
-    code += '        self.macd = self.MACD(self.sym, 12, 26, 9, Resolution.Daily)
-'
-    code += '        self.vol_sma = self.SMA(self.sym, 20, Resolution.Daily)
-'
-    code += '        self.SetWarmUp(200)
-
-'
-    code += '    def OnData(self, data):
-'
-    code += '        if self.IsWarmingUp: return
-'
-    code += '        if not self.Portfolio.Invested:
-'
-    code += '            if self.ShouldEntry(data): self.SetHoldings(self.sym, 1)
-'
-    code += '        else:
-'
-    code += '            if self.ShouldExit(data): self.Liquidate()
-
-'
-    code += '    def ShouldEntry(self, data):
-'
-    code += '        if not data.ContainsKey(self.sym): return False
-'
-    code += '        bar = data[self.sym]
-'
-    code += '        p = bar.Close
-'
-    code += '        rsi_ok = self.rsi.IsReady and self.rsi.Current.Value < 30
-'
-    code += '        price_ok = self.sma200.IsReady and p > self.sma200.Current.Value
-'
-    code += '        macd_ok = self.macd.IsReady and self.macd.Current.Value > self.macd.Signal.Current.Value
-'
-    code += '        vol_ok = self.vol_sma.IsReady and bar.Volume > self.vol_sma.Current.Value * 2
-'
-    code += f'        if "{s["type"]}" == "RSI_Momentum": return rsi_ok and price_ok
-'
-    code += f'        elif "{s["type"]}" == "MACD_Cross": return macd_ok
-'
-    code += '        elif "{s["type"]}" == "BB_Bounce":
-'
-    code += '            bb_ok = self.bb.IsReady and p < self.bb.LowerBand.Current.Value
-'
-    code += '            return bb_ok and rsi_ok
-'
-    code += '        elif "{s["type"]}" == "Volume_Surge": return vol_ok and p > bar.Open
-'
-    code += '        elif "{s["type"]}" == "EMA_Cross":
-'
-    code += '            e9 = self.EMA(self.sym, 9, Resolution.Daily)
-'
-    code += '            e21 = self.EMA(self.sym, 21, Resolution.Daily)
-'
-    code += '            return e9.Current.Value > e21.Current.Value if e9.IsReady and e21.IsReady else False
-'
-    code += '        return False
-
-'
-    code += '    def ShouldExit(self, data):
-'
-    code += '        if not data.ContainsKey(self.sym): return True
-'
-    code += '        bar = data[self.sym]
-'
-    code += '        entry = self.Portfolio[self.sym].AveragePrice
-'
-    code += '        curr = bar.Close
-'
-    code += '        loss = (entry - curr) / entry * 100
-'
-    code += f'        if loss > {s["stop"]}: return True
-'
-    code += '        gain = (curr - entry) / entry * 100
-'
-    code += f'        if gain > {s["take"]}: return True
-'
-    code += '        if self.Time.hour >= 15 and self.Time.minute >= 45: return True
-'
-    code += '        return False
-'
+    code = write_strategy_file(name, cls, s['type'], s['hyp'], s['stop'], s['take'])
     
     with open(STRATEGIES_DIR + '/' + name + '.py', 'w') as f:
         f.write(code)
@@ -173,11 +130,11 @@ def generate_strategy():
     with open(STRATEGIES_DIR + '/' + name + '.json', 'w') as f:
         json.dump(meta, f, indent=2)
     
-    log(f'  Generated: {name}')
+    log("  Generated: " + name)
     return meta
 
 def run_backtest(meta):
-    log(f'Running backtest for {meta["name"]}...')
+    log("Running backtest for " + meta['name'] + "...")
     trades = random.randint(80, 200)
     wr = random.uniform(0.52, 0.70)
     aw = random.uniform(1.5, 4.0)
@@ -200,21 +157,21 @@ def run_backtest(meta):
     with open(BACKTESTS_DIR + '/' + meta['name'] + '_backtest.json', 'w') as f:
         json.dump(results, f, indent=2)
     
-    log(f'  Trades={trades}, WR={results["win_rate"]}%, PF={results["profit_factor"]}')
+    log("  Trades=" + str(trades) + ", WR=" + str(results['win_rate']) + "%, PF=" + str(results['profit_factor']))
     return results
 
 def evaluate(results):
-    log(f'Evaluating {results["strategy"]}...')
-    cmd = f'python3 /home/dx/.hermes/skills/trading/systematic-trading/scripts/evaluate_backtest.py --total-trades {results["total_trades"]} --win-rate {results["win_rate"]} --avg-win-pct {results["avg_win_pct"]} --avg-loss-pct {results["avg_loss_pct"]} --max-drawdown-pct {results["max_drawdown_pct"]} --years-tested 4 --num-parameters 3 --slippage-tested --output-dir {REPORTS_DIR}'
+    log("Evaluating " + results['strategy'] + "...")
+    cmd = "python3 /home/dx/.hermes/skills/trading/systematic-trading/scripts/evaluate_backtest.py --total-trades " + str(results['total_trades']) + " --win-rate " + str(results['win_rate']) + " --avg-win-pct " + str(results['avg_win_pct']) + " --avg-loss-pct " + str(results['avg_loss_pct']) + " --max-drawdown-pct " + str(results['max_drawdown_pct']) + " --years-tested 4 --num-parameters 3 --slippage-tested --output-dir " + REPORTS_DIR
     code, out, err = run_cmd(cmd)
     
-    verdict = 'REFINE'
+    verdict = "REFINE"
     score = 0.60
-    if 'DEPLOY' in out:
-        verdict = 'DEPLOY'
+    if "DEPLOY" in out:
+        verdict = "DEPLOY"
         score = 0.86
-    elif 'ABANDON' in out:
-        verdict = 'ABANDON'
+    elif "ABANDON" in out:
+        verdict = "ABANDON"
         score = 0.30
     
     ev = {
@@ -227,40 +184,40 @@ def evaluate(results):
     with open(REPORTS_DIR + '/' + results['strategy'] + '_eval.json', 'w') as f:
         json.dump(ev, f, indent=2)
     
-    log(f'  Verdict: {verdict} (score={score})')
+    log("  Verdict: " + verdict + " (score=" + str(score) + ")")
     return ev
 
 def commit_push(meta, ev):
-    log('Committing to GitHub...')
-    run_cmd('git add .', cwd=PROJECT_DIR)
-    msg = f'{ev["verdict"]}: {meta["name"]} PF={ev["metrics"]["profit_factor"]}'
-    code, _, err = run_cmd(f'git commit -m "{msg}"', cwd=PROJECT_DIR)
+    log("Committing to GitHub...")
+    run_cmd("git add .", cwd=PROJECT_DIR)
+    msg = ev['verdict'] + ': ' + meta['name'] + ' PF=' + str(ev['metrics']['profit_factor'])
+    code, _, err = run_cmd('git commit -m "' + msg + '"', cwd=PROJECT_DIR)
     if code == 0:
-        log(f'  Committed: {msg}')
-        code, _, _ = run_cmd('git push', cwd=PROJECT_DIR)
-        log(f'  {"Pushed!" if code == 0 else "Push failed"}')
+        log("  Committed: " + msg)
+        code, _, _ = run_cmd("git push", cwd=PROJECT_DIR)
+        log("  Pushed!" if code == 0 else "  Push failed")
     else:
-        log(f'  Nothing to commit')
+        log("  Nothing to commit")
 
 def main():
-    log('=' * 60)
-    log('LEAN TRADER ORCHESTRATOR v2 - 24/7 MODE')
-    log('=' * 60)
+    log("=" * 60)
+    log("LEAN TRADER ORCHESTRATOR v3 - 24/7 MODE")
+    log("=" * 60)
     i = 0
     while True:
         i += 1
-        log(f'\n--- ITERATION {i} ---')
+        log("\n--- ITERATION " + str(i) + " ---")
         try:
             fetch_data()
             meta = generate_strategy()
             results = run_backtest(meta)
             ev = evaluate(results)
             commit_push(meta, ev)
-            log(f'Iteration {i} done. Sleeping 60s...')
+            log("Iteration " + str(i) + " done. Sleeping 60s...")
             time.sleep(60)
         except Exception as e:
-            log(f'ERROR: {str(e)}')
+            log("ERROR: " + str(e))
             time.sleep(30)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
