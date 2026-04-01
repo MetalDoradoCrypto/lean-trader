@@ -1,0 +1,18 @@
+{
+  "strategy": "Volume_Surge_20260401_180020",
+  "timestamp": "2026-04-01T18:00:20.254543",
+  "verdict": "REFINE",
+  "score": 0.6,
+  "metrics": {
+    "strategy": "Volume_Surge_20260401_180020",
+    "timestamp": "2026-04-01T18:00:20.204822",
+    "total_trades": 135,
+    "win_rate": 57.82,
+    "avg_win_pct": 2.45,
+    "avg_loss_pct": 1.33,
+    "max_drawdown_pct": 22.74,
+    "years_tested": 4,
+    "profit_factor": 2.51,
+    "simulated": true
+  }
+}
