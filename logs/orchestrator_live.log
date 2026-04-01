@@ -2565,3 +2565,9 @@
 [2026-04-01 17:47:05]   Committed: DEPLOY: RSI_Momentum_20260401_174705 PF=3.04
 [2026-04-01 17:47:06]   Pushed!
 [2026-04-01 17:47:06] Iteration 135 done. Sleeping 60s...
+[2026-04-01 17:48:06] 
+--- ITERATION 136 ---
+[2026-04-01 17:48:06] Fetching market data...
+[2026-04-01 17:48:10]   BTCUSDT: OK
+[2026-04-01 17:48:13]   ETHUSDT: OK
+[2026-04-01 17:48:17]   SOLUSDT: OK
