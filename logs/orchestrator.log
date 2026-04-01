@@ -2120,3 +2120,36 @@
 [2026-04-01 09:23:44] Evaluating EMA_Cross_20260401_092344...
 [2026-04-01 09:23:44]   Verdict: REFINE (score=0.6)
 [2026-04-01 09:23:44] Committing to GitHub...
+[2026-04-01 09:23:44]   Committed: REFINE: EMA_Cross_20260401_092344 PF=1.75
+[2026-04-01 09:23:45]   Pushed!
+[2026-04-01 09:23:45] Iteration 19 done. Sleeping 60s...
+[2026-04-01 09:23:45]   Push failed
+[2026-04-01 09:23:45] Iteration 19 done. Sleeping 60s...
+[2026-04-01 09:24:36] 
+--- ITERATION 67 ---
+[2026-04-01 09:24:36] Fetching market data...
+[2026-04-01 09:24:39]   BTCUSDT: OK
+[2026-04-01 09:24:42]   ETHUSDT: OK
+[2026-04-01 09:24:45] 
+--- ITERATION 20 ---
+[2026-04-01 09:24:45] Fetching market data...
+[2026-04-01 09:24:45] 
+--- ITERATION 20 ---
+[2026-04-01 09:24:45] Fetching market data...
+[2026-04-01 09:24:45]   SOLUSDT: OK
+[2026-04-01 09:24:48]   BTCUSDT: OK
+[2026-04-01 09:24:49]   BTCUSDT: OK
+[2026-04-01 09:24:49]   BTC-USD: FAIL
+[2026-04-01 09:24:52]   ETHUSDT: OK
+[2026-04-01 09:24:52]   ETHUSDT: OK
+[2026-04-01 09:24:52]   ETH-USD: FAIL
+[2026-04-01 09:24:55]   SOLUSDT: OK
+[2026-04-01 09:24:55]   SOLUSDT: OK
+[2026-04-01 09:24:56]   SPY: FAIL
+[2026-04-01 09:24:56] Generating strategy...
+[2026-04-01 09:24:56]   Generated: EMA_Cross_20260401_092456
+[2026-04-01 09:24:56] Running backtest for EMA_Cross_20260401_092456...
+[2026-04-01 09:24:56]   Trades=116, WR=61.76%, PF=6.83
+[2026-04-01 09:24:56] Evaluating EMA_Cross_20260401_092456...
+[2026-04-01 09:24:56]   Verdict: REFINE (score=0.6)
+[2026-04-01 09:24:56] Committing to GitHub...
