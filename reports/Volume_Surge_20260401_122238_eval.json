@@ -1,0 +1,18 @@
+{
+  "strategy": "Volume_Surge_20260401_122238",
+  "timestamp": "2026-04-01T12:22:38.532618",
+  "verdict": "ABANDON",
+  "score": 0.3,
+  "metrics": {
+    "strategy": "Volume_Surge_20260401_122238",
+    "timestamp": "2026-04-01T12:22:38.481046",
+    "total_trades": 124,
+    "win_rate": 55.36,
+    "avg_win_pct": 1.69,
+    "avg_loss_pct": 2.13,
+    "max_drawdown_pct": 16.86,
+    "years_tested": 4,
+    "profit_factor": 0.99,
+    "simulated": true
+  }
+}
