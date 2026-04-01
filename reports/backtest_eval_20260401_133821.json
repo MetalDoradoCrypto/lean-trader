@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-04-01T13:38:21.834122",
+  "scores": {
+    "sample_size": 0.7,
+    "expectancy": 1.0,
+    "risk_management": 0.7,
+    "robustness": 0.3,
+    "execution_realism": 0.8
+  },
+  "overall_score": 0.7,
+  "red_flags": [],
+  "warnings": [
+    "MODERATE TEST PERIOD: 4 years. Prefer 10+ years.",
+    "HIGH PROFIT FACTOR: 3.18. Verify execution realism."
+  ],
+  "verdict": "\ud83d\udd04 REFINE",
+  "input_params": {
+    "total_trades": 165,
+    "win_rate": 52.13,
+    "avg_win_pct": 3.85,
+    "avg_loss_pct": 1.32,
+    "max_drawdown_pct": 16.51,
+    "years_tested": 4,
+    "num_parameters": 3,
+    "slippage_tested": true
+  }
+}
