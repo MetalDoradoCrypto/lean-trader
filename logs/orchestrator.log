@@ -35741,3 +35741,29 @@
 [2026-04-01 17:42:07] Evaluating BB_Bounce_20260401_174207...
 [2026-04-01 17:42:07]   Verdict: REFINE (score=0.6)
 [2026-04-01 17:42:07] Committing to GitHub...
+[2026-04-01 17:42:07]   ETHUSDT: OK
+[2026-04-01 17:42:07]   Committed: REFINE: BB_Bounce_20260401_174207 PF=3.73
+[2026-04-01 17:42:07]   BTC-USD: FAIL
+[2026-04-01 17:42:08]   Pushed!
+[2026-04-01 17:42:08] Iteration 153 done. Sleeping 60s...
+[2026-04-01 17:42:10]   SOLUSDT: OK
+[2026-04-01 17:42:11]   ETH-USD: FAIL
+[2026-04-01 17:42:14]   BTC-USD: FAIL
+[2026-04-01 17:42:14] 
+--- ITERATION 142 ---
+[2026-04-01 17:42:14] Fetching market data...
+[2026-04-01 17:42:14] ERROR: [Errno 32] Broken pipe
+[2026-04-01 17:42:16] 
+--- ITERATION 101 ---
+[2026-04-01 17:42:16] Fetching market data...
+[2026-04-01 17:42:17]   ETH-USD: FAIL
+[2026-04-01 17:42:17]   BTCUSDT: OK
+[2026-04-01 17:42:20]   BTCUSDT: OK
+[2026-04-01 17:42:20]   SPY: FAIL
+[2026-04-01 17:42:20] Generating strategy...
+[2026-04-01 17:42:20]   Generated: MACD_Cross_20260401_174220
+[2026-04-01 17:42:20] Running backtest for MACD_Cross_20260401_174220...
+[2026-04-01 17:42:20]   Trades=126, WR=63.31%, PF=3.46
+[2026-04-01 17:42:20] Evaluating MACD_Cross_20260401_174220...
+[2026-04-01 17:42:20]   Verdict: DEPLOY (score=0.86)
+[2026-04-01 17:42:20] Committing to GitHub...
