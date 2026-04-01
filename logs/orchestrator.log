@@ -12455,3 +12455,34 @@
 [2026-04-01 12:18:36] Evaluating BB_Bounce_20260401_121836...
 [2026-04-01 12:18:36]   Verdict: DEPLOY (score=0.86)
 [2026-04-01 12:18:36] Committing to GitHub...
+[2026-04-01 12:18:36]   Committed: DEPLOY: BB_Bounce_20260401_121836 PF=4.11
+[2026-04-01 12:18:38]   Pushed!
+[2026-04-01 12:18:38] Iteration 104 done. Sleeping 60s...
+[2026-04-01 12:18:39] 
+--- ITERATION 5 ---
+[2026-04-01 12:18:39] Fetching market data...
+[2026-04-01 12:18:42]   BTCUSDT: OK
+[2026-04-01 12:18:45] 
+--- ITERATION 149 ---
+[2026-04-01 12:18:45] Fetching market data...
+[2026-04-01 12:18:45]   ETHUSDT: OK
+[2026-04-01 12:18:48]   BTCUSDT: OK
+[2026-04-01 12:18:49]   SOLUSDT: OK
+[2026-04-01 12:18:51] 
+--- ITERATION 54 ---
+[2026-04-01 12:18:51] Fetching market data...
+[2026-04-01 12:18:51]   ETHUSDT: OK
+[2026-04-01 12:18:52]   BTC-USD: FAIL
+[2026-04-01 12:18:55]   BTCUSDT: OK
+[2026-04-01 12:18:55]   SOLUSDT: OK
+[2026-04-01 12:18:55]   ETH-USD: FAIL
+[2026-04-01 12:18:58]   ETHUSDT: OK
+[2026-04-01 12:18:59]   BTC-USD: FAIL
+[2026-04-01 12:18:59]   SPY: FAIL
+[2026-04-01 12:18:59] Generating strategy...
+[2026-04-01 12:18:59]   Generated: RSI_Momentum_20260401_121859
+[2026-04-01 12:18:59] Running backtest for RSI_Momentum_20260401_121859...
+[2026-04-01 12:18:59]   Trades=166, WR=60.26%, PF=1.89
+[2026-04-01 12:18:59] Evaluating RSI_Momentum_20260401_121859...
+[2026-04-01 12:18:59]   Verdict: REFINE (score=0.6)
+[2026-04-01 12:18:59] Committing to GitHub...
