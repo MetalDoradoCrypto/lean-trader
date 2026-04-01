@@ -1596,3 +1596,7 @@
 [2026-04-01 16:36:23]   Committed: REFINE: EMA_Cross_20260401_163622 PF=2.25
 [2026-04-01 16:36:24]   Pushed!
 [2026-04-01 16:36:24] Iteration 84 done. Sleeping 60s...
+[2026-04-01 16:37:24] 
+--- ITERATION 85 ---
+[2026-04-01 16:37:24] Fetching market data...
+[2026-04-01 16:37:30]   BTCUSDT: OK
