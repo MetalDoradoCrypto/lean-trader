@@ -1,0 +1,12 @@
+{
+  "strategy": "RSI_Momentum_20260401_150659",
+  "timestamp": "2026-04-01T15:06:59.854496",
+  "total_trades": 91,
+  "win_rate": 63.19,
+  "avg_win_pct": 2.82,
+  "avg_loss_pct": 2.01,
+  "max_drawdown_pct": 17.68,
+  "years_tested": 4,
+  "profit_factor": 2.42,
+  "simulated": true
+}
