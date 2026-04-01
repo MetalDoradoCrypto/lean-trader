@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-01T12:45:29.601609",
+  "timestamp": "2026-04-01T12:45:29.712850",
   "scores": {
     "sample_size": 0.7,
     "expectancy": 1.0,
@@ -11,15 +11,15 @@
   "red_flags": [],
   "warnings": [
     "MODERATE TEST PERIOD: 4 years. Prefer 10+ years.",
-    "HIGH PROFIT FACTOR: 3.89. Verify execution realism."
+    "HIGH PROFIT FACTOR: 4.68. Verify execution realism."
   ],
   "verdict": "\u2705 DEPLOY",
   "input_params": {
-    "total_trades": 174,
-    "win_rate": 69.54,
-    "avg_win_pct": 2.54,
-    "avg_loss_pct": 1.49,
-    "max_drawdown_pct": 9.45,
+    "total_trades": 194,
+    "win_rate": 67.84,
+    "avg_win_pct": 2.04,
+    "avg_loss_pct": 0.92,
+    "max_drawdown_pct": 12.66,
     "years_tested": 4,
     "num_parameters": 3,
     "slippage_tested": true
