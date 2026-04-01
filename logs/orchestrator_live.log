@@ -1501,3 +1501,9 @@
 [2026-04-01 16:29:10]   Committed: DEPLOY: EMA_Cross_20260401_162910 PF=1.7
 [2026-04-01 16:29:11]   Pushed!
 [2026-04-01 16:29:11] Iteration 79 done. Sleeping 60s...
+[2026-04-01 16:30:11] 
+--- ITERATION 80 ---
+[2026-04-01 16:30:11] Fetching market data...
+[2026-04-01 16:30:16]   BTCUSDT: OK
+[2026-04-01 16:30:21]   ETHUSDT: OK
+[2026-04-01 16:30:27]   SOLUSDT: OK
