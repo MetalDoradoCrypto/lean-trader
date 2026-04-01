@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-01T14:57:30.323539",
+  "scores": {
+    "sample_size": 0.7,
+    "expectancy": 1.0,
+    "risk_management": 1.0,
+    "robustness": 0.3,
+    "execution_realism": 1.0
+  },
+  "overall_score": 0.8,
+  "red_flags": [],
+  "warnings": [
+    "MODERATE TEST PERIOD: 4 years. Prefer 10+ years."
+  ],
+  "verdict": "\u2705 DEPLOY",
+  "input_params": {
+    "total_trades": 118,
+    "win_rate": 62.36,
+    "avg_win_pct": 1.73,
+    "avg_loss_pct": 1.18,
+    "max_drawdown_pct": 9.19,
+    "years_tested": 4,
+    "num_parameters": 3,
+    "slippage_tested": true
+  }
+}
