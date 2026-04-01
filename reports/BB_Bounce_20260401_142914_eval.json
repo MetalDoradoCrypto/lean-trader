@@ -1,0 +1,18 @@
+{
+  "strategy": "BB_Bounce_20260401_142914",
+  "timestamp": "2026-04-01T14:29:14.070486",
+  "verdict": "ABANDON",
+  "score": 0.3,
+  "metrics": {
+    "strategy": "BB_Bounce_20260401_142914",
+    "timestamp": "2026-04-01T14:29:14.021432",
+    "total_trades": 118,
+    "win_rate": 52.11,
+    "avg_win_pct": 1.78,
+    "avg_loss_pct": 2.24,
+    "max_drawdown_pct": 18.76,
+    "years_tested": 4,
+    "profit_factor": 0.87,
+    "simulated": true
+  }
+}
