@@ -1,0 +1,8 @@
+{
+  "name": "RSI_Momentum_20260401_165813",
+  "type": "RSI_Momentum",
+  "hypothesis": "RSI<30 + price>SMA200 indicates bounce",
+  "stop_loss": 3.0,
+  "take_profit": 6.0,
+  "generated_at": "20260401_165813"
+}
