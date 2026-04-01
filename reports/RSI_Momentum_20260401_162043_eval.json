@@ -1,0 +1,18 @@
+{
+  "strategy": "RSI_Momentum_20260401_162043",
+  "timestamp": "2026-04-01T16:20:43.775722",
+  "verdict": "REFINE",
+  "score": 0.6,
+  "metrics": {
+    "strategy": "RSI_Momentum_20260401_162043",
+    "timestamp": "2026-04-01T16:20:43.727588",
+    "total_trades": 185,
+    "win_rate": 66.61,
+    "avg_win_pct": 2.61,
+    "avg_loss_pct": 2.18,
+    "max_drawdown_pct": 24.98,
+    "years_tested": 4,
+    "profit_factor": 2.39,
+    "simulated": true
+  }
+}
