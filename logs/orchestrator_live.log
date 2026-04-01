@@ -1767,3 +1767,7 @@
 [2026-04-01 16:50:27]   Committed: DEPLOY: BB_Bounce_20260401_165027 PF=1.57
 [2026-04-01 16:50:29]   Pushed!
 [2026-04-01 16:50:29] Iteration 93 done. Sleeping 60s...
+[2026-04-01 16:51:29] 
+--- ITERATION 94 ---
+[2026-04-01 16:51:29] Fetching market data...
+[2026-04-01 16:51:32]   BTCUSDT: OK
