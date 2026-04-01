@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-01T12:19:05.439131",
+  "scores": {
+    "sample_size": 0.7,
+    "expectancy": 1.0,
+    "risk_management": 0.7,
+    "robustness": 0.3,
+    "execution_realism": 1.0
+  },
+  "overall_score": 0.74,
+  "red_flags": [],
+  "warnings": [
+    "MODERATE TEST PERIOD: 4 years. Prefer 10+ years."
+  ],
+  "verdict": "\ud83d\udd04 REFINE",
+  "input_params": {
+    "total_trades": 160,
+    "win_rate": 61.7,
+    "avg_win_pct": 2.28,
+    "avg_loss_pct": 2.19,
+    "max_drawdown_pct": 16.93,
+    "years_tested": 4,
+    "num_parameters": 3,
+    "slippage_tested": true
+  }
+}
